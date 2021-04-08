@@ -1,0 +1,15 @@
+{{!-- companies.hbs --}}
+<ul>
+    {{#each companies}}
+    <li>
+        {{name}}
+        <ul>
+            {{#each employees}}
+            <li>
+                {{name}} ({{title}})
+            </li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>
